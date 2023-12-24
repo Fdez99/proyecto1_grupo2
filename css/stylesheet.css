@@ -2,34 +2,38 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
-    display: flex;
+/* Navbar */ 
+#ft_logo {
+    height: 80px;
+    width: auto;
+    filter: drop-shadow(4px 4px 6px black);
+}
+
+.navbar {
+    padding: 6px;
+    background-image: linear-gradient(purple, pink);
+}
+
+.navbar-collapse {
+    align-items: center;
     justify-content: space-between;
-    align-items: end;
-    background-image: linear-gradient(180deg, pink, purple)
-}
-
-.logo {
-    display: flex;
-    justify-content: start;
-}
-
-.img_logo {
-    display: inline-block;
-    margin: 12px;
-    height: 120px;
-}
-
-#round {
-    filter: drop-shadow(6px 6px 6px rgb(0, 0, 0));
-    width: 120px;
-    height : 120px;
-}
-
-/* Ahora viene el menú con botones */
-
-.nav-item {
-    background-color: white;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
