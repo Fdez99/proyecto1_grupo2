@@ -84,4 +84,9 @@ body {
     .navbar-brand {
         display: none;
     }
+    .dropbtn {
+      background-color: transparent;
+      color: black;
+      font-weight: bolder;
+    }
 }
