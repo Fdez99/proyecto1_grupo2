@@ -81,6 +81,87 @@ body {
     }
 }
 
+/*main page*/
+
+/* Estilos para la barra lateral (aside) */
+aside {
+  background-color: #69446b; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px;
+  width: 250px; /* Ancho de la barra lateral */
+  position: fixed;
+  height: 100%; /* O ajusta a la altura que desees */
+}
+
+aside h1, aside p {
+  text-align: center; /* Centra el texto en la barra lateral */
+}
+
+aside img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen en la barra lateral */
+}
+
+/* imagenes del carrusel*/
+#images1 {
+  display: flex;
+  overflow: hidden;
+}
+
+#images1 img {
+  flex: 0 0 auto;
+  width: 500px;
+  height: 400px;
+}
+
+
+/* Animación del carrusel */
+@keyframes slide {
+  0%, 100% { transform: translateX(0); }
+  12.5% { transform: translateX(calc(-100% * 0)); }
+  25% { transform: translateX(calc(-100% * 1)); }
+  37.5% { transform: translateX(calc(-100% * 2)); }
+  50% { transform: translateX(calc(-100% * 3)); }
+  62.5% { transform: translateX(calc(-100% * 4)); }
+  75% { transform: translateX(calc(-100% * 5)); }
+  87.5% { transform: translateX(calc(-100% * 6)); }
+  100% { transform: translateX(calc(-100% * 0)); } /* Ajuste para eliminar el espacio vacío */
+}
+
+/* Animación al carrusel */
+#images1 img {
+  animation: slide 15s linear infinite;
+}
+
+/*resto de la página*/
+article {
+  margin-left: 270px; /* Ancho de la barra lateral más un poco de margen */
+  padding: 20px;
+}
+
+section {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilos para cada imagen de section */
+section img {
+  max-width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+/*animación de iconos */
+section img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
+}
+
+
+
 /*:::FOOTER:::*/
 .pie-pagina{
   width: 100%;
