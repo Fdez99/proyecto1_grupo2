@@ -1,5 +1,6 @@
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgb(209, 229, 249), rgb(249, 151, 168), rgb(249, 206, 213));
 }
 
 /* Navbar */ 
@@ -100,7 +101,21 @@ aside img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; */
+  margin: 0 auto;
+}
+
+header {text-align: center;
+  color: rgb(16, 13, 14);
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+  margin: 0;
+  padding: 10px;
+}
+
+h2, h3 {text-align: center;
+  color: rgb(16, 13, 14);
+  margin: 0;
+  padding: 10px;
 }
 
 /* imagenes del carrusel*/
@@ -140,7 +155,7 @@ article {
   padding: 20px;
 }
 
-section {
+section {background-color: rgb(127, 73, 127);
   display: flex; 
   justify-content: space-around;
   align-items: center;
@@ -157,15 +172,14 @@ section img {
 }
 /*animación de iconos */
 section img:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
 }
-
 
 
 /*:::FOOTER:::*/
 .pie-pagina{
   width: 100%;
-  background-color: pink;
+  background-color: rgb(242, 99, 123);
 }
 .pie-pagina .grupo-1{
   width: 100%;
@@ -230,9 +244,3 @@ transition: all 300ms ease;
       padding: 30px 0px;
     }
   }
-    
-  
-
-
-
-
