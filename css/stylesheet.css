@@ -250,3 +250,18 @@ transition: all 300ms ease;
   #formulario {
     display: block;
   }
+  /*cambio de Claudia:formatear los botones para que sean blancos*/
+  .btnblanco{
+    border: 0;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    min-width: auto;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btnformulario:active{
+    
+  }
