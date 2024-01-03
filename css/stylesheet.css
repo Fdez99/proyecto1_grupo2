@@ -13,6 +13,9 @@ body {
 .navbar {
     padding: 6px;
     background-image: linear-gradient(purple, pink, white);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar-collapse {
@@ -91,6 +94,7 @@ aside {
   width: 250px; 
   position: fixed;
   height: 400px;
+  margin-top: 10vw;
 }
 
 aside h1, aside p {
@@ -104,11 +108,13 @@ aside img {
   margin: 0 auto;
 }
 
-header {text-align: center;
+header {
+  text-align: center;
   color: rgb(16, 13, 14);
   border-right: 2px solid #000;
   border-left: 2px solid #000;
   margin: 0;
+  margin-top: 10vw;
   padding: 10px;
 }
 
