@@ -1,0 +1,27 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgb(209, 229, 249), rgb(249, 151, 168), rgb(249, 206, 213));
+}
+.Form{
+    margin: 100px;
+    border: 20px solid  rgb(188, 120, 188);
+    padding: 30px;
+}
+.form-label{
+    padding: 30px;
+}
+
+.form-control {
+    border: solid  rgb(188, 120, 188);
+    padding: 30px;
+}
+.buttom{
+display: block;
+text-align: center;
+margin: auto;
+width: 200px;
+border-radius: 20px;
+}
+.buttom:hover{
+    background-color: rgb(188, 120, 188);
+}
