@@ -93,7 +93,7 @@ aside {
     padding: 20px;
     width: 250px;
     position: fixed;
-    height: 400px;
+    height: 350px;
     margin-top: 10vw;
     transition: left 0.5s ease;
 }
@@ -163,11 +163,51 @@ article {
   padding: 20px;
 }
 
+.card-clients {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+hr {
+    color: rgb(177, 11, 182);
+}
+
+.pic-client {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.card-container{
+    background-color: rgb(249, 249, 249);
+    width: 320px;
+    box-shadow: 2px 2px 2px 2px rgb(115, 4, 91);
+}
+
+.card-body {
+    margin: 5px;
+    font-size: small;
+    text-align: center;
+}
+
+.card-container {
+    transition: transform 0.3s ease-in-out; /* Transición suave para la propiedad transform */
+}
+
+.card-container:hover {
+    transform: scale(1.1); /* Ajusta el valor de escala según tus preferencias */
+}
+
 section {
-  display: flex; 
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 }
 
 section img {
@@ -176,11 +216,38 @@ section img {
     margin: 0 10px;
     border-radius: 40px;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 section img:hover {
-    transform: scale(1.2);
+    transform: rotate(360deg);
+}
+
+.phone-info {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-phone {
+    background-color: rgb(249, 206, 213);
+    width: 320px;
+    box-shadow: 2px 2px 2px 2px rgb(246, 144, 161);
+}
+
+.phone-pic {
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.info-body {
+    margin: 5px;
+    font-size: small;
+    text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -201,6 +268,16 @@ section img:hover {
     section img {
         width:40px;
         height: 40px;
+    }
+
+    .phone-info{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .card-clients {
+        display: flex; 
+        flex-direction: column;
     }
 }
 
