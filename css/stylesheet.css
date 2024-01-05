@@ -78,6 +78,9 @@ body {
     .navbar-brand {
         display: none;
     }
+    .navbar {
+      position: relative;
+    }
     .dropbtn {
       background-color: transparent;
       color: black;
