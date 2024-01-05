@@ -13,6 +13,9 @@ body {
 .navbar {
     padding: 6px;
     background-image: linear-gradient(purple, pink, white);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 .navbar-collapse {
@@ -86,29 +89,34 @@ body {
 
 /* Estilos para la barra lateral (aside) */
 aside {
-  background-color: #816b83; 
-  padding: 20px;
-  width: 250px; 
-  position: fixed;
-  height: 400px;
+    background-color: #816b83;
+    padding: 20px;
+    width: 250px;
+    position: fixed;
+    height: 350px;
+    margin-top: 10vw;
+    transition: left 0.5s ease;
 }
 
 aside h1, aside p {
-  text-align: center;
+    text-align: center;
+    font-size: larger;
 }
 
 aside img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-header {text-align: center;
+header {
+  text-align: center;
   color: rgb(16, 13, 14);
   border-right: 2px solid #000;
   border-left: 2px solid #000;
   margin: 0;
+  margin-top: 10vw;
   padding: 10px;
 }
 
@@ -155,26 +163,123 @@ article {
   padding: 20px;
 }
 
-section {background-color: rgb(127, 73, 127);
-  display: flex; 
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
+.card-clients {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    border-radius: 10px;
 }
 
-/* Estilos para cada imagen de section */
+hr {
+    color: rgb(177, 11, 182);
+}
+
+.pic-client {
+    width: 320px;
+    height: 320px;
+    border-radius: 10px;
+}
+
+.card-container{
+    background-color: rgb(249, 249, 249);
+    width: 320px;
+    box-shadow: 2px 2px 2px 2px rgb(115, 4, 91);
+}
+
+.card-body {
+    margin: 5px;
+    font-size: small;
+    text-align: center;
+}
+
+.card-container {
+    transition: transform 0.3s ease-in-out; /* Transición suave para la propiedad transform */
+}
+
+.card-container:hover {
+    transform: scale(1.1); /* Ajusta el valor de escala según tus preferencias */
+}
+
+section {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
 section img {
-  max-width: 100px;
-  height: 100px;
-  margin: 0 10px;
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-}
-/*animación de iconos */
-section img:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen en un 10% */
+    max-width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    border-radius: 40px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
 }
 
+section img:hover {
+    transform: rotate(360deg);
+}
+
+.phone-info {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-phone {
+    background-color: rgb(249, 206, 213);
+    width: 320px;
+    box-shadow: 2px 2px 2px 2px rgb(246, 144, 161);
+}
+
+.phone-pic {
+    width: 320px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.info-body {
+    margin: 5px;
+    font-size: small;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    aside {
+        text-align: start;
+        align-items: flex-start;
+        left: 0; 
+        width: 100%;
+        height: auto;
+        position: relative;
+        transition: none;
+    }
+
+    article {
+        margin-left: 0;
+    }
+
+    section img {
+        width:40px;
+        height: 40px;
+    }
+
+    .phone-info{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .card-clients {
+        display: flex; 
+        flex-direction: column;
+    }
+}
 
 /*:::FOOTER:::*/
 .pie-pagina{
@@ -249,6 +354,7 @@ transition: all 300ms ease;
   }
   #formulario {
     display: block;
+<<<<<<< HEAD
   }
   /*cambio de Claudia:formatear los botones para que sean blancos*/
   .btnblanco{
@@ -261,3 +367,6 @@ transition: all 300ms ease;
     border: none;
     cursor: pointer;
   }
+=======
+  }
+>>>>>>> 753c6e39c03bfa7d6f5cf4193ebefc9ec6cbd252
