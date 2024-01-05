@@ -25,7 +25,3 @@ border-radius: 20px;
 .buttom:hover{
     background-color: rgb(188, 120, 188);
 }
-
-@media screen and (max-width: 767px){
-    
-}
